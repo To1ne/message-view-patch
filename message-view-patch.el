@@ -606,6 +606,7 @@ lines, three-dashes-line, equals lines, diffstat lines, diffstat
 summary. Then there is added lines, removed lines, context lines,
 diff-header lines and diff-file-header lines, for which we are
 borrowing the highlighting faces for from `diff-mode'."
+  (interactive)
   (if (message-view-patch-want-treatment)
       (save-excursion
         (progn
